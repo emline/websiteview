@@ -8,7 +8,7 @@
 	</div>
 	<div id="sec-story" class="w-200 padding-right float-left">
 		<?php foreach($newest as $new) {
-			echo '<li><p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p></li>';
+			echo '<p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p>';
 			echo "
 			";
 		}
@@ -17,5 +17,16 @@
 	</div>
 	<div class="clear"></div>
 	<h3 class="margin-mini-bottom">Another test</h3>
-	<img src="<?php echo $this->model->imagecache('dexter.jpg',50, 50); ?>" />
+	<div id="ep" class="w-100 float-left">
+		<img src="<?php echo $this->model->imagecache('dexter.jpg',100, 100); ?>" /><br />
+		<h2 class="margin-mini-bottom">Test headline</h2>
+	</div>
+	<div id="ep" class="w-100 float-left padding-left">
+		<img src="<?php echo $this->model->imagecache('dexter.jpg',100, 100); ?>" /><br />
+		<h2 class="margin-mini-bottom">Test headline</h2>
+	</div>
+	<div id="ep" class="w-100 float-left padding-left">
+		<img src="<?php echo $this->model->imagecache('gfv.jpg',100, 100); ?>" /><br />
+		<h2 class="margin-mini-bottom">Test headline</h2>
+	</div>
 </div>
