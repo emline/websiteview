@@ -102,7 +102,7 @@
             <div id="header">
                 <a href="<?php URL_PROTOCOL . URL_DOMAIN ?>/"><span class="col-md6 logo">Maybe Magazine</span></a>
                 <div class="col-md-6 search-bar">
-                    <form id="search_box" action="http://dev.matthewguhit.com/search/getkeyword/" method="get">
+                    <form id="search_box" action="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/search/getkeyword/" method="get">
                         <div class="form-search">
                             <table width="300" border="0">
                                 <tr>
