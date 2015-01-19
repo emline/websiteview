@@ -67,6 +67,18 @@ class Model
 	
 	}
 	
+	public function getMainImage()
+	{
+	
+        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='a' ORDER BY article_id DESC LIMIT 1";
+        $query = $this->db->prepare($sql);
+        $query->execute();
+
+		
+		return $query->fetchAll();
+	
+	}
+	
 	public function simpleImage($image)
 	{
 	
