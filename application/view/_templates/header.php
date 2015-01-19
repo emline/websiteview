@@ -2,23 +2,23 @@
 <head>
 
     <title><?php if (isset($headline)) : ?><?php print $headline; ?> | Maybe Magazine<?php else : ?>Home | Maybe Magazine<?php endif; ?></title>
-    <link rel="stylesheet" href="../../../public/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../../../public/css/article.css" type="text/css" />
-    <link rel="stylesheet" href="../../../public/css/login.css" type="text/css" />
-    <link rel="stylesheet" href="../../../public/files/css/jquery-ui.css" />
-    <link href="../../../public/js/video-js/video-js.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/files/css/jquery-ui.css" />
+    <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>deo-js/video-js.css" rel="stylesheet" type="text/css">
 
     <script type="text/javascript">var switchTo5x = true;</script>
     <!-- <script type="text/javascript">stLight.options({publisher:'585a436c-6103-4093-bf23-ef67149b6149'});</script> -->
-    <script type="text/javascript" src="../../../public/misc/jquery.js"></script>
+    <script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/misc/jquery.js"></script>
     <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="../../../public/js/general.js" type="text/javascript"></script>
-    <script src="../../../public/js/video-js/video.js"></script>
+    <script src="http://code.jquery.c<?php echo URL_PROTOCOL . URL_DOMAIN; ?>10.4/jquery-ui.js"></script>
+    <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>neral.js" type="text/javascript"></script>
+    <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>deo-js/video.js"></script>
     <script>
-        videojs.options.flash.swf = "../../../public/video-js/video-fjs.swf";
+        videojs.options.flash.swf = "<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-fjs.swf";
     </script>
-	<script src="../../../public/js/loadxmldoc.js"></script>
+	<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>adxmldoc.js"></script>
     <?php
     if (isset($headline)) {
 
