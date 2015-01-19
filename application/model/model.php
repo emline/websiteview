@@ -19,7 +19,7 @@ class Model
 	
     public function getArticle($article_id)
     {
-        $sql = "SELECT article_headline, article_deck, author_id, article_outlet, article_pdate, category, article_image, article_body FROM article WHERE article_url = :article_id";
+        $sql = "SELECT article_headline, article_deck, author_id, article_outlet, article_pdate, category, article_image, article_body FROM article WHERE article_status='2' AND article_url = :article_id";
         $query = $this->db->prepare($sql);
         $parameters = array(':article_id' => $article_id);
 
@@ -32,7 +32,7 @@ class Model
 	public function getKeyword($keyword)
 	{
         
-        $sql = "SELECT * FROM article WHERE article_keywords LIKE '%{$keyword}%'";       
+        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND article_keywords LIKE '%{$keyword}%'";       
         $query = $this->db->prepare($sql);
         $query->execute();
 
