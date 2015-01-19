@@ -97,7 +97,7 @@
 
     <div id="wrapper"> <!-- START WRAPPER -->
             <div id="top">
-                <div style="padding-right: 10px;"><a href="#">Sign in Using Facebook</a> <span>|</span> <?php if (isset($_COOKIE['gp4'])) : ?><a href="<?php print $root; ?>/admin">Manager</a> | <a href="<?php print $root; ?>/logout.php">Log Out</a><?php else : ?><a href="<?php print $root; ?>/admin">Log In</a><?php endif; ?> | <a href="#">Subscribe Now</a> | <a href="#">Help</a></div>
+                <div style="padding-right: 10px;"><a href="#">Sign in Using Facebook</a> <span>|</span> <?php if (isset($_COOKIE['gp4'])) : ?><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/admin">Manager</a> | <a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/logout.php">Log Out</a><?php else : ?><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/admin">Log In</a><?php endif; ?> | <a href="#">Subscribe Now</a> | <a href="#">Help</a></div>
             </div>
             <div id="header">
                 <a href="<?php URL_PROTOCOL . URL_DOMAIN ?>/"><span class="col-md6 logo">Maybe Magazine</span></a>
@@ -128,12 +128,12 @@
             <div id="container" >
                 <ul class="solidblockmenu">
 
-                    <li id="nav-home" class="col-md-1"><a href="<?php print $root; ?>">Home</a></li>
-                    <li id="nav-about" class="col-md-1"><a href="<?php echo $root; ?>/page/1">About</a></li>
-                    <li id="nav-news" class="col-md-1"><a href="<?php echo $root; ?>/category/news">News</a></li>
-                    <li id="nav-features" class="col-md-1"><a href="<?php echo $root; ?>/category/features">Features</a></li>
-                    <li id="nav-opinion" class="col-md-1"><a href="<?php echo $root; ?>/category/opinion">Opinion</a></li>
-                    <li id="nav-contact" class="col-md-1"><a href="<?php echo $root; ?>/page/2">Contact</a></li>
+                    <li id="nav-home" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>">Home</a></li>
+                    <li id="nav-about" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/page/1">About</a></li>
+                    <li id="nav-news" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/category/news">News</a></li>
+                    <li id="nav-features" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/category/features">Features</a></li>
+                    <li id="nav-opinion" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/category/opinion">Opinion</a></li>
+                    <li id="nav-contact" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>/page/2">Contact</a></li>
                     <li class="email" class="col-md-1"><a href="http://gmail.com/">E-mail</a></li>
                     <li class="facebook" class="col-md-1"><a href="http://facebook.com/">Facebook</a></li>
                     <li class="twitter" class="col-md-1"><a href="http://twitter.com/">Twitter</a></li>
