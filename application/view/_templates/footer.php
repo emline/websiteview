@@ -5,11 +5,11 @@
     <div id="table">
         <div id="tr" class="padding-last">
             <h3 class="color">Navigation</a></h3>
-            <li><a href="<?php print $root; ?>">Home</a></li>
-            <li><a href="<?php print $root; ?>about">About</a></li>
-            <li><a href="<?php print $root; ?>news">News</a></li>
-            <li><a href="<?php print $root; ?>stories">Stories</a></li>
-            <li><a href="<?php print $root; ?>contact">Contact</a></li>
+            <li><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>">Home</a></li>
+            <li><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/about">About</a></li>
+            <li><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/news">News</a></li>
+            <li><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/stories">Stories</a></li>
+            <li><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/contact">Contact</a></li>
         </div>
         <div id="tr" class="padding-all">
             <h3 class="color">Recommended Links</h3>
