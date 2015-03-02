@@ -3,7 +3,7 @@
 	
 	<div id="main-story" class="w-350 padding-right float-left">
 	<?php foreach ($toppicks as $toppick) {
-		echo '<img src="' . $this->model->imagecache($toppick->article_image, 350, 300) . '" />';
+		echo ' <a href="' . URL_PROTOCOL . URL_DOMAIN . '/article/getarticle/' . $toppick->article_url . '"><img src="' . $this->model->imagecache($toppick->article_image, 350, 300) . '</a>" />';
 		echo '<h1><a href="' . URL_PROTOCOL . URL_DOMAIN . '/article/getarticle/' . $toppick->article_url . '">' . $toppick->article_alt_headline . '</a></h1>';
 		echo '<p>' . $toppick->article_summary . '</p>';
 	}
