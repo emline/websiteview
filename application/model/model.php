@@ -66,6 +66,20 @@ class Model
 		return $query->fetchAll();
 	
 	}
+
+
+  public function getSecondary()
+  {
+
+
+        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='b' ORDER BY artice_id DESC LIMIT 3";
+        $query = $this->db->prepare($sql);
+        $query->execute();
+
+        return $query->fetchAll();
+
+
+  }
 	
 	public function getMainImage()
 	{
