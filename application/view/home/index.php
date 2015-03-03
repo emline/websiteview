@@ -21,10 +21,10 @@
 	<div class="clear"></div>
 	<h3 class="margin-mini-bottom">Another test</h3>
 
-  <?php foreach ($secondary a $sec) {
+  <?php foreach ($secondary as $sec) {
    	echo '<div id="ep" class="w-100 float-left">
-   		<img src="' . $this->model->imagecache('dexter.jpg',100, 100) . '" /><br />
-   		<h2 class="margin-mini-bottom">Test headline</h2>
+   		<img src="' . $this->model->imagecache($sec->article_image,100, 100) . '" /><br />
+   		<h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2>
    	</div>';
   }
   ?>
