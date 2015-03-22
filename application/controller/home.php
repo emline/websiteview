@@ -17,7 +17,8 @@ class Home extends Controller
     public function index()
     {
         $newest = $this->model->getNewest();
-		$toppicks = $this->model->getMainImage();
+        $toppicks = $this->model->getMainImage();
+        $secondary = $this->model->getSecondary();
 		
         require APP . 'view/_templates/header.php';
         require APP . 'view/home/index.php';
