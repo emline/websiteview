@@ -1,7 +1,6 @@
   <?php if ($article->article_headline) : ?>
   <h1 class="headline"><?php echo $article->article_headline; ?></h1>
   <h2 class="deck"><?php echo $article->article_deck; ?></h2>
-  <div><img src="<?php echo $this->model->imagecache($byline->author_mug, 70, 70); ?>" /></div>
   <p class="byline">By <?php echo $byline->author_name; ?> | <?php echo $article->article_pdate; ?></p>
   <?php endif; ?>
   <div class="front-content">
@@ -37,16 +36,18 @@
     <div class="text-story">
       <?php echo $article->article_body; ?>
     </div>
-    <?php /*
+   
+
     <div id="author-box">
       <div class="author-mug">
-      <img src="<?php echo imagecache($root, $mug, 87, 100); ?>" />
+      <img src="<?php echo $this->model->imagecache($byline->author_mug, 70, 70); ?>" />
       </div>
       <div class="author-bio">
-      <h3>About <?php echo $name; ?></h3>
-      <p><?php echo $bio; ?> <a href="mailto:<?php echo $email; ?>">EMAIL</a> | <a href="http://twitter.com/<?php echo $twitter; ?>">TWITTER</a></p>
+      <h3>About <?php echo $byline->author_name; ?></h3>
+      <p><?php echo $byline->author_bio; ?></p>
       </div>
     </div>
+	<?php /*
     <div class="related-stories">
       <h3 class="related-stories-header">More Articles You May Like</h3>
       <ul>

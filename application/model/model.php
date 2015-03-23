@@ -142,7 +142,7 @@ class Model
 		
     public function getAuthor($author_id)
     {
-        $sql = "SELECT author_name, author_mug FROM author WHERE author_id = :author_id";
+        $sql = "SELECT author_name, author_mug, author_bio FROM author WHERE author_id = :author_id";
         $query = $this->db->prepare($sql);
         $parameters = array(':author_id' => $author_id);
 
