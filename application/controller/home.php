@@ -19,11 +19,21 @@ class Home extends Controller
         $newest = $this->model->getNewest();
         $toppicks = $this->model->getMainImage();
         $secondary = $this->model->getSecondary();
+		$status = "live";
 		
-        require APP . 'view/_templates/header.php';
-        require APP . 'view/home/index.php';
-        require APP . 'view/_templates/sidebar.php';
-        require APP . 'view/_templates/footer.php';
+		if($status == "live")
+		{
+			require APP . 'view/_templates/header.php';
+			require APP . 'view/home/index.php';
+			require APP . 'view/_templates/sidebar.php';
+			require APP . 'view/_templates/footer.php';
+		}
+		else
+		{
+			require APP . 'view/_offline/header.php';
+			require APP . 'view/_offline/index.php';
+			require APP . 'view/_offline/footer.php';		
+		}
         
     }
 
