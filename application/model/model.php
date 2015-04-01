@@ -66,6 +66,15 @@ class Model
 		return $query->fetchAll();
 	
 	}
+  
+  public function checkStatus()
+  {
+    $sql = "SELECT * FROM article WHERE article_id='52'";
+    $query = $this->db->prepare($sql);
+    $query->execute();
+    
+    return $query->fetchAll();
+  }
 
 
   public function getSecondary()
