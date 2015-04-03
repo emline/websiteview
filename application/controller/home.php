@@ -19,9 +19,9 @@ class Home extends Controller
         $newest = $this->model->getNewest();
         $toppicks = $this->model->getMainImage();
         $secondary = $this->model->getSecondary();
-		$status = $this->model->checkStatus();
+		$status = 1;
 		
-		if($status->article_deck == "live")
+		if($status)
 		{
 			require APP . 'view/_templates/header.php';
 			require APP . 'view/home/index.php';
