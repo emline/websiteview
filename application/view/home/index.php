@@ -22,16 +22,11 @@
 	<h3 class="margin-mini-bottom">Another test</h3>
 
   <?php foreach ($secondary as $sec) {
-   	echo '<div id="ep" class="w-100 float-left">
+   	echo '<div id="ep" class="w-100 padding-right float-left">
    		<img src="' . $this->model->imagecache($sec->article_image,100, 100) . '" /><br />
    		<h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2>
    	</div>';
   }
   ?>
-
-	<div id="ep" class="w-100 float-left padding-left">
-		<img src="<?php echo $this->model->imagecache('college-gameday2.jpg',100, 100); ?>" /><br />
-		<h2 class="margin-mini-bottom">Test headline</h2>
-	</div>
 
 </div>

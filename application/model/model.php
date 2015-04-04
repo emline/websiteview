@@ -81,7 +81,7 @@ class Model
   {
 
 
-        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='b' ORDER BY article_id DESC LIMIT 3";
+        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='b' ORDER BY article_id DESC LIMIT 4";
         $query = $this->db->prepare($sql);
         $query->execute();
 
