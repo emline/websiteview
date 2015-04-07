@@ -111,6 +111,12 @@ p {
     text-decoration: none;
 }
 
+#livesearch {
+  position: absolute;
+  background-color: #fff;
+  width: 241px;
+}
+
 /*********** CAROUSEL START *************************/
 
 #carousel {
