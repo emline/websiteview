@@ -1,4 +1,8 @@
 <?php
+
+// This AJAX live search script is from w3schools.com
+// http://www.w3schools.com/php/php_ajax_livesearch.asp
+
 $xmlDoc=new DOMDocument();
 $xmlDoc->load("links.xml");
 
@@ -19,12 +23,12 @@ if (strlen($q)>0) {
         if ($hint=="") {
           $hint="<a href='" .
           $z->item(0)->childNodes->item(0)->nodeValue .
-          "' target='_blank'>" .
+          "'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         } else {
           $hint=$hint . "<br /><a href='" .
           $z->item(0)->childNodes->item(0)->nodeValue .
-          "' target='_blank'>" .
+          "'>" .
           $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
         }
       }
