@@ -80,6 +80,30 @@
 <script type="text/javascript">stLight.options({publisher: "585a436c-6103-4093-bf23-ef67149b6149", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <!-- Share This Code End -->
 
+<script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    // code for IE7+, Firefox, Chrome, Opera, Safari
+    xmlhttp=new XMLHttpRequest();
+  } else {  // code for IE6, IE5
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
+    }
+  }
+  xmlhttp.open("GET","/public/livesearch.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
 <body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> <!-- START BODY -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -104,9 +128,10 @@
             <table width="300" border="0">
               <tr>
                 <td valign="baseline">
-                  <input id="search" type="text" name="q" value="" class="input-text" onclick="if (this.value == 'Search Keywords Here')
-                        this.value = '';" onblur="if (this.value == '')
-                              this.value = 'Search Keywords Here';" "autocomplete="off">
+					<form>
+					<input id="search2" name="q" value="" class="input-text" type="text" size="30" onkeyup="showResult(this.value)">
+					<div id="livesearch"></div>
+					</form>
                 </td>
                 <td valign="baseline">
                   <button id="search-button" type="submit" title="Search" class="button"><span><span>Search</span></span></button>
