@@ -12,8 +12,9 @@ class Scripts extends Controller {
     }
 	
 	public function type($parameter) {
-
-        require APP . 'view/scripts/' . $parameter . '.php';
+	
+		// Temporarily changed require file location because bitbucket won't allow creation of directories.
+        require APP . 'view/test/' . $parameter . '.php';
 	
 	}
 
