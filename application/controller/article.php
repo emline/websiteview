@@ -21,14 +21,28 @@ class Article extends Controller {
 	
 		$article = $this->model->getArticle($article_id);
 		$newest = $this->model->getNewest();
-		$byline = $this->model->getAuthor($article->author_id);
+		if($article)
+		{
+			$byline = $this->model->getAuthor($article->author_id);
+		}
 		$slider = $this->model->getCarousel($article_id);
 		
-        require APP . 'view/_templates/header.php';
-        require APP . 'view/_templates/carousel.php';
-        require APP . 'view/article/index.php';
-        require APP . 'view/_templates/sidebar.php';
-        require APP . 'view/_templates/footer.php';
+		if($article)
+		{
+			require APP . 'view/_templates/header.php';
+			require APP . 'view/_templates/carousel.php';
+			require APP . 'view/article/index.php';
+			require APP . 'view/_templates/sidebar.php';
+			require APP . 'view/_templates/footer.php';
+		}
+		else
+		{
+			require APP . 'view/_templates/header.php';
+			require APP . 'view/_templates/carousel.php';
+			require APP . 'view/article/404.php';
+			require APP . 'view/_templates/sidebar.php';
+			require APP . 'view/_templates/footer.php';
+		}
 	
 	}
 

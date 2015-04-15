@@ -1,11 +1,8 @@
-  <?php if ($article->article_headline) : ?>
   <h1 class="headline"><?php echo $article->article_headline; ?></h1>
   <h2 class="deck"><?php echo $article->article_deck; ?></h2>
   <p class="byline">By <?php echo $byline->author_name; ?> | <?php echo $article->article_pdate; ?></p>
-  <?php endif; ?>
   <div class="front-content">
     <br />
-    <?php if ($article->article_headline) : ?>
     <div class="addthistoolbar">
       <div class="add-tools">
         <span class='st_sharethis' displayText='ShareThis'></span>
@@ -74,9 +71,4 @@
     <br></br>
     
     */ ?>
-    <?php else : ?>
-    <?php header('HTTP/1.0 404 Not Found'); ?>
-    <h1>Page Not Available</h1>
-    <p>This page is currently not available. Please check back at a later time.</p>
-    <?php endif; ?>
   </div> <!-- End Front Content -->
