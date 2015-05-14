@@ -28,5 +28,12 @@
    	</div>';
   }
   ?>
+  
+  <div class="clear"></div>
+  
+  <?php foreach ($lists as $list) 
+  {
+    echo '<div class=""></div>'
+  }
 
 </div>
