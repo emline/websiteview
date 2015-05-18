@@ -29,6 +29,10 @@
   }
   ?>
   
+  <p>This is a test</p>
+   <p>This is a test</p>
+   <p>This is a test</p>
+   
   <div class="clear"></div>
   
   <?php foreach ($lists as $list) 
