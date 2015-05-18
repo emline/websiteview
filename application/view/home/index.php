@@ -30,8 +30,6 @@
   ?>
   
   <p>This is a test</p>
-   <p>This is a test</p>
-   <p>This is a test</p>
    
   <div class="clear"></div>
   
@@ -39,5 +37,6 @@
   {
     echo '<div class=""></div>'
   }
+  ?>
 
 </div>
