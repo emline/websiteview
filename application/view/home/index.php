@@ -29,6 +29,8 @@
   }
   ?>
   
-  <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes to Deploy HQ, which currently allows up to 19 deployments per day. The later will only occur for pull requests that I approve.</p>
+ <div class="clear"></div> 
+  
+  <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occur for pull requests that I approve.</p>
 
 </div>
