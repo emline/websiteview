@@ -1,9 +1,9 @@
-/* 
+/*
 
 This style sheet is designed by Matthew Guhit. If you would like
 a web app like this, feel free to email him at matthewguhit@live.com
-for a quote. His services includes SEO re-integration, data migration 
-from WordPress, and custom website development using technologies like 
+for a quote. His services includes SEO re-integration, data migration
+from WordPress, and custom website development using technologies like
 PHP, HTML5 and JavaScript.
 
 */
@@ -611,6 +611,7 @@ dl dd {
     text-align: left;
     float: left;
     width: 300px;
+    padding: 0 0 0 15px;
 }
 
 .right-panel .links {
@@ -931,7 +932,7 @@ a:link,a:visited,a:hover,a:active {
 .front-content {
     float: left;
     margin-left: -15px;
-    padding: 0 15px 0 15px;
+    padding: 0 0 0 15px;
     width: 615px;
 }
 
@@ -961,7 +962,7 @@ width: 100px;
 }
 
 .w-150 {
-width: 150px;
+width: 147px;
 }
 
 
@@ -990,7 +991,7 @@ padding: 0 7px 0 0;
 }
 
 .padding-mini-right {
-padding: 0 7px 0 0;
+padding: 0 6px 0 0;
 }
 
 .padding-mini-bottom {
@@ -1209,7 +1210,7 @@ margin: 0px 0px 7px 0px;
 
 #home {
     padding-bottom: 0;
-    /* background-image:url(images/up.gif); 
+    /* background-image:url(images/up.gif);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
