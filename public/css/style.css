@@ -228,7 +228,7 @@ p {
     margin-left: auto;
     margin-top: 0;
     background-color: #fff;
-    max-width: 960px;
+    max-width: 970px;
 }
 
 .ad300x250 {
@@ -763,11 +763,11 @@ dl dd {
     font-weight: 700;
     font-size: 11.4px;
     height: 40px;
-    margin: 0 0 0 15px;
+    margin: 0 0 10px 15px;
     overflow: hidden;
     padding: 0;
     text-align: center;
-    width: 930px;
+    width: 940px;
 }
 
 .solidblockmenu li {
