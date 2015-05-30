@@ -2,7 +2,7 @@
 
   <div class="grid_8">
 
-    <div class="grid_5">
+    <div class="grid_5 alpha">
 
       <?php foreach ($toppicks as $toppick) 
       {
@@ -14,7 +14,7 @@
 
     </div> <!-- end grid_5 -->
     
-    <div class="grid_3">
+    <div class="grid_3 omega">
       <?php foreach($newest as $new) 
        {
 		 	  echo '<p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p>';
@@ -22,6 +22,7 @@
 			  ";
 		  }
 		  ?>
+		  
 		  <p>This is a test sentence that is only meant to act as a place holder.</p>
     </div> <!-- end grid_3 -->
 
@@ -31,12 +32,16 @@
   <div class="grid_8"> <!-- start editor picks -->
   
     <?php foreach ($secondary as $sec) {
-    	echo '<div class=" grid_2">
+    	echo '<div class=" grid_2 alpha">
    		<img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /><br />
    		<h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2>
    	   </div>';
     }
     ?>
+    
+    <!-- Use "for" instead of "foreach" loop so you can configure correctly for nested elements. -->
+    
+    <div class="clear"></div>
     
     <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occupull requests that I approve.</p>
   
