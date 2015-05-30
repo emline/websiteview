@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/files/css/jquery-ui.css" />
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-js.css" rel="stylesheet" type="text/css">
-  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/c toss/960_12_col.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/960_12_col.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">var switchTo5x = true;</script>
   <script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/misc/jquery.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
