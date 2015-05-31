@@ -105,7 +105,11 @@ function showResult(str) {
 }
 </script>
 
-<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> <!-- START BODY -->
+<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
+
+<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
+
+<!-- START BODY -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
