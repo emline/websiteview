@@ -1,6 +1,4 @@
 
-</div> <!-- END CONTENT-->
-
 <div id="footer">
     <div id="table">
         <div id="tr" class="padding-last">

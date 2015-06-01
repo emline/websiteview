@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/files/css/jquery-ui.css" />
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-js.css" rel="stylesheet" type="text/css">
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/960_12_col.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript">var switchTo5x = true;</script>
   <script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/misc/jquery.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -104,7 +105,11 @@ function showResult(str) {
 }
 </script>
 
-<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> <!-- START BODY -->
+<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
+
+<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
+
+<!-- START BODY -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
