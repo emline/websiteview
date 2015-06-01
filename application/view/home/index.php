@@ -27,7 +27,7 @@
     </div> <!-- end grid_3 -->
   
   
-    <div class="grid_8"> <!-- start editor picks -->
+    <div class="grid_8 alpha"> <!-- start editor picks -->
     
     <?php foreach ($secondary as $sec) {
       echo '<div class=" grid_2 alpha">
@@ -37,8 +37,6 @@
     }
     ?>
     
-    <!-- Use "for" instead of "foreach" loop so you can configure correctly for nested elements. -->
-    
     <div class="clear"></div>
     
     <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occupull requests that I approve.</p>
@@ -46,11 +44,7 @@
     </div> <!-- end editor picks -->
 
   </div> <!-- end grid_8 -->
-  
-  
 
-
-  
   <div class="grid_4">
     <div class="ad300x250">
     <a href="http://www.redcross.org/templates/render/render.jsp?pageId=3400006&scode=RSG00000E020&subcode=RCO_Storytellers_WebBanner"><img src="http://www.redcross.org:80/images/MEDIA_CustomProductCatalog/m16141464_300x250-Storytellers-Angelina-General-Web-Banner.jpg" alt="Storytellers Web Banner" /></a>
