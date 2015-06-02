@@ -13,7 +13,7 @@ class Article extends Controller {
         require APP . 'view/_templates/header.php';
         require APP . 'view/_templates/carousel.php';
         require APP . 'view/article/index.php';
-        require APP . 'view/_templates/sidebar.php';
+        require APP . 'view/_templates/region2.php';
         require APP . 'view/_templates/footer.php';
     }
 	
@@ -32,7 +32,7 @@ class Article extends Controller {
 			require APP . 'view/_templates/header.php';
 			require APP . 'view/_templates/carousel.php';
 			require APP . 'view/article/index.php';
-			require APP . 'view/_templates/sidebar.php';
+			require APP . 'view/_templates/region2.php';
 			require APP . 'view/_templates/footer.php';
 		}
 		else

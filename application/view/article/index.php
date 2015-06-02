@@ -1,14 +1,16 @@
-  <h1 class="headline"><?php echo $article->article_headline; ?></h1>
-  <h2 class="deck"><?php echo $article->article_deck; ?></h2>
-  <p class="byline">By <?php echo $byline->author_name; ?> | <?php echo $article->article_pdate; ?></p>
-  <div class="front-content">
+<div class="container_12">  <!-- start article content -->
+  <div class="grid_8">  
+    <h1 class="headline"><?php echo $article->article_headline; ?></h1>
+    <h2 class="deck"><?php echo $article->article_deck; ?></h2>
+    <p class="byline">By <?php echo $byline->author_name; ?> | <?php echo $article->article_pdate; ?></p>
+    <div class="front-content">
     <br />
     <div class="addthistoolbar">
       <div class="add-tools">
-        <span class='st_sharethis' displayText='ShareThis'></span>
-        <span class='st_facebook' displayText='Facebook'></span>
-        <span class='st_twitter' displayText='Tweet'></span>
-        <span class='st_email' displayText='Email'></span>
+      <span class='st_sharethis' displayText='ShareThis'></span>
+      <span class='st_facebook' displayText='Facebook'></span>
+      <span class='st_twitter' displayText='Tweet'></span>
+      <span class='st_email' displayText='Email'></span>
       </div>
       <div class="text-size">Filed Under: <?php echo $article->category; ?></div> 
     </div>
@@ -16,24 +18,24 @@
       <div class="img" style="width: 350px;"><img src="<?php echo $this->model->imagecache($article->article_image, 350, 300); ?>" />
       </div>
       <div id="enlarge-wrapper">
-        <div class="photoEnlarge">
-          <a class="enlarge" href="#" onclick=
-           "window.open('http://localhost/drupal-6.19/themes/development/node-photoenlarge.html', 'Popup', 'width=640,height=550,scrollbars=no,noresize');
-               return false;">
-          Enlarge</a>
-        </div>
+      <div class="photoEnlarge">
+        <a class="enlarge" href="#" onclick=
+         "window.open('http://localhost/drupal-6.19/themes/development/node-photoenlarge.html', 'Popup', 'width=640,height=550,scrollbars=no,noresize');
+           return false;">
+        Enlarge</a>
+      </div>
       </div>
       <div class="credit">
-        <?php if (isset($article->article_image1c)) echo $article->article_image1c; ?>
+      <?php if (isset($article->article_image1c)) echo $article->article_image1c; ?>
       </div>
       <div class="caption">
-        <?php if (isset($article->article_image1d)) echo $article->article_image1d; ?>
+      <?php if (isset($article->article_image1d)) echo $article->article_image1d; ?>
       </div>
     </div>
     <div class="text-story">
       <?php echo $article->article_body; ?>
     </div>
-   
+     
 
     <div id="author-box">
       <div class="author-mug">
@@ -44,7 +46,7 @@
       <p><?php echo $byline->author_bio; ?></p>
       </div>
     </div>
-	<?php /*
+    <?php /*
     <div class="related-stories">
       <h3 class="related-stories-header">More Articles You May Like</h3>
       <ul>
@@ -52,7 +54,7 @@
       $result = mysql_query("SELECT * FROM external ORDER BY external_id DESC LIMIT 5");
 
       while ($row = mysql_fetch_array($result)) {
-        echo '<li><div class="related-stories-block"><a href="' . $row['external_url'] . '" target="_blank">' . $row['external_headline'] . '</a> (' . $row['external_source'] . ') </div></li>';
+      echo '<li><div class="related-stories-block"><a href="' . $row['external_url'] . '" target="_blank">' . $row['external_headline'] . '</a> (' . $row['external_source'] . ') </div></li>';
       }
       ?>
       </ul>
@@ -71,4 +73,5 @@
     <br></br>
     
     */ ?>
-  </div> <!-- End Front Content -->
+    </div> <!-- End Front Content -->
+  </div>
