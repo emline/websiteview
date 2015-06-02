@@ -1,9 +1,7 @@
-<div class="container_12">  <!-- start article content -->
   <div class="grid_8">  
     <h1 class="headline"><?php echo $article->article_headline; ?></h1>
     <h2 class="deck"><?php echo $article->article_deck; ?></h2>
     <p class="byline">By <?php echo $byline->author_name; ?> | <?php echo $article->article_pdate; ?></p>
-    <div class="front-content">
     <br />
     <div class="addthistoolbar">
       <div class="add-tools">
@@ -73,5 +71,4 @@
     <br></br>
     
     */ ?>
-    </div> <!-- End Front Content -->
-  </div>
+  </div> <!-- end grid_8 -->

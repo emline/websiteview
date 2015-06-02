@@ -1,4 +1,6 @@
 
+</div> <!-- end container_12 -->
+
 <div id="footer">
     <div id="table">
         <div id="tr" class="padding-last">

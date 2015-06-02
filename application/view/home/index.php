@@ -1,5 +1,3 @@
-<div class="container_12">
-
   <div class="grid_8">
 
     <div class="grid_5 alpha">
@@ -64,13 +62,4 @@
         </ul>
     </div>  
   </div> <!-- end grid_4 -->
-  
-
-</div> <!-- end container_12 -->
-
-
-
-
-
-
-
+ 
