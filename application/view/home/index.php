@@ -29,8 +29,8 @@
     
     <?php foreach ($secondary as $sec) {
       echo '<div class=" grid_2 alpha">
-      <a href="' . $sec->article_url . '"><img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /></a><br />
-      <a href="' . $sec->article_url . '"><h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2></a>
+      <a href="/article/getarticle/' . $sec->article_url . '"><img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /></a><br />
+      <a href="/article/getarticle/' . $sec->article_url . '"><h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2></a>
        </div>';
     }
     ?>
