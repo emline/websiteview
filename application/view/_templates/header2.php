@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title><?php echo $article->article_headline; ?>| Maybe Magazine<?php else : ?>Home | Maybe Magazine<?php endif; ?></title>
+  <title><?php echo $article->article_headline; ?>| Maybe Magazine</title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
