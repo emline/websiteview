@@ -10,7 +10,7 @@ class Article extends Controller {
     {
 
        // load views. within the views we can echo out $songs and $amount_of_songs easily
-        require APP . 'view/_templates/header.php';
+        require APP . 'view/_templates/header2.php';
         require APP . 'view/_templates/carousel.php';
         require APP . 'view/article/index.php';
         require APP . 'view/_templates/region2.php';
@@ -29,7 +29,7 @@ class Article extends Controller {
 		
 		if($article)
 		{
-			require APP . 'view/_templates/header.php';
+			require APP . 'view/_templates/header2.php';
 			require APP . 'view/_templates/carousel.php';
 			require APP . 'view/article/index.php';
 			require APP . 'view/_templates/region2.php';
@@ -37,7 +37,7 @@ class Article extends Controller {
 		}
 		else
 		{
-			require APP . 'view/_templates/header.php';
+			require APP . 'view/_templates/header2.php';
 			require APP . 'view/_templates/carousel.php';
 			require APP . 'view/article/404.php';
 			require APP . 'view/_templates/sidebar.php';
