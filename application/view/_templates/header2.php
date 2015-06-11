@@ -165,3 +165,5 @@ function showResult(str) {
         <li class="twitter" class="col-md-1"><a href="http://twitter.com/">Twitter</a></li>
       </ul>
     </div>
+	
+    <div class="container_12">
