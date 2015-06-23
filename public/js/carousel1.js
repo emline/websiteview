@@ -1,4 +1,3 @@
-<script>
   $(document).ready(function() {
     var carousel = 0;
     $(".left").click(function() {
@@ -28,4 +27,3 @@
       }
     });
   });
-</script>
