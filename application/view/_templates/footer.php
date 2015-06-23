@@ -1,4 +1,3 @@
-
 </div> <!-- end container_12 -->
 
 <div id="footer">
@@ -29,6 +28,8 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/carousel1.js" ></script>
 
 </body>
 
