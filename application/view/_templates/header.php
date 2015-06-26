@@ -4,19 +4,10 @@
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
-  <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/files/css/jquery-ui.css" />
-  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-js.css" rel="stylesheet" type="text/css">
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/960_12_col.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript">var switchTo5x = true;</script>
-  <script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/misc/jquery.js"></script>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/jquery-ui.js"></script>
-  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/general.js" type="text/javascript"></script>
-  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/video.js"></script>
-  <script>
-    videojs.options.flash.swf = "<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-fjs.swf";
-  </script>
-	<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>adxmldoc.js"></script>
+  
+  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
+  
   <?php
   if (isset($headline)) {
 
@@ -26,6 +17,7 @@
     include("view_meta-article.php");
   }
   ?>
+  
   <script>
     $(function() {
       $("#tabs").tabs();
