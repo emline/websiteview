@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title><?php echo $article->article_headline; ?>| Maybe Magazine</title>
+  <title><?php echo $article->article_headline; ?>| Buried Ledes</title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/960gs/code/css/min/960_12_col.css" rel="stylesheet" type="text/css" />

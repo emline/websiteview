@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title><?php if (isset($headline)) : ?><?php print $headline; ?> | Maybe Magazine<?php else : ?>Home | Maybe Magazine<?php endif; ?></title>
+  <title>Looking deeper into older stories | Buried Ledes</title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/960gs/code/css/min/960_12_col.css" rel="stylesheet" type="text/css" />
