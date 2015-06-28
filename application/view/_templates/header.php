@@ -3,8 +3,7 @@
   <title><?php if (isset($headline)) : ?><?php print $headline; ?> | Maybe Magazine<?php else : ?>Home | Maybe Magazine<?php endif; ?></title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
-  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/960_12_col.css" rel="stylesheet" type="text/css" />
-
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/960gs/code/css/min/960_12_col.css" rel="stylesheet" type="text/css" />
   <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
   <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/livesearch.js"></script>
 </head>
