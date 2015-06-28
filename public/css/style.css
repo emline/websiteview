@@ -131,6 +131,7 @@ p {
 
 #carousel {
     border-bottom: 1px solid #ccc;
+	margin: 0 0 15px 0;
     padding: 15px 0 0 0;
     clear: both;
 }
