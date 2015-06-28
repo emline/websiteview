@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
   <title>Looking deeper into older stories | Buried Ledes</title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
@@ -62,11 +64,6 @@
                 </td>
                 <td valign="baseline">
                   <button id="search-button" type="submit" title="Search" class="button"><span><span>Search</span></span></button>
-                  <script type="text/javascript">
-                    //<![CDATA[
-                    var searchForm = new Varien.searchForm('search_box', 'search', 'Search entire store here...');
-                    //]]>
-                  </script>
                 </td>
               </tr>
             </table>
