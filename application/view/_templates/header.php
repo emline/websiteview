@@ -22,13 +22,6 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-
-<!-- Share This Code Start -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "585a436c-6103-4093-bf23-ef67149b6149", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-<!-- Share This Code End -->
-
 <body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
 
 <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
