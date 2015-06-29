@@ -31,8 +31,6 @@
 
 <body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
 
-<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
-
 <!-- START BODY -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
