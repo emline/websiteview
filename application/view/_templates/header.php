@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
   <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/960gs/code/css/min/960_12_col.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
   <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/jquery/jquery-1.11.3.min.js"></script>
   <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/livesearch.js"></script>
 </head>
@@ -46,20 +47,18 @@
       <a href="<?php URL_PROTOCOL . URL_DOMAIN ?>/"><span class="col-md6 logo">Maybe Magazine</span></a>
       <div class="col-md-6 search-bar">
         <form id="search_box" action="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/search/getkeyword/" method="get">
-          <div class="form-search">
-            <table width="300" border="0">
-              <tr>
-                <td valign="baseline">
-					<form>
-					<input id="search2" name="q" value="" class="input-text" type="text" size="30" onkeyup="showResult(this.value)">
+          <div class="grid_6">
+		  
+			<div class="grid_4 alpha">
+				<form>
+					<input id="search2" name="q" value="" class="form-control" placeholder="Search here" type="text" size="30" onkeyup="showResult(this.value)">
 					<div id="livesearch"></div>
-					</form>
-                </td>
-                <td valign="baseline">
-                  <button id="search-button" type="submit" title="Search" class="button"><span><span>Search</span></span></button>
-                </td>
-              </tr>
-            </table>
+				</form>
+			</div>
+            
+			<div class="grid_2 alpha">
+				<button id="search-button" type="submit" title="Search" class="btn btn-default"><span><span>Search</span></span></button>
+			</div>
           </div>
         </form>
       </div>
