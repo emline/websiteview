@@ -4,4 +4,6 @@
           echo '<li><a href="http://dev.matthewguhit.com/article/getarticle/' . $new->article_url . '">' . $new->article_headline . '</a></li>';
        }
        ?>
+	   
+	   <?php echo $markup; ?>
   </div>
