@@ -28,8 +28,10 @@ class Search extends Controller {
 			$page = isset($_GET['page']) ? ((int) $_GET['page']) : 1;
 
 			// instantiate; set current page; set number of records
+			// See: http://web.onassar.com/blog/2012/06/09/github-project-php-pagination/
 			$pagination = (new Pagination());
 			$pagination->setCurrent($page);
+			$pagination->setCrumbs(4);
 			$pagination->setTotal(200);
 
 			// grab rendered/parsed pagination markup
