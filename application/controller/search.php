@@ -19,7 +19,8 @@ class Search extends Controller {
             $keyword = filter_input(INPUT_GET,'q');
 	
             $newest = $this->model->getKeyword($keyword);
-		
+			
+			//php-pagination library include
             require APP . 'libs/php-pagination/Pagination.class.php';
 			
 			// determine page (based on <_GET>)
@@ -36,8 +37,8 @@ class Search extends Controller {
 			$markup = $pagination->parse();
 			
 			
+			// Core Includes
             require APP . 'view/_templates/header.php';
-            //require APP . 'view/_templates/carousel.php';
             require APP . 'view/search/index.php';
             require APP . 'view/_templates/sidebar.php';
             require APP . 'view/_templates/footer.php';
