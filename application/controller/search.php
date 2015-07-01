@@ -3,8 +3,6 @@
 //$articleID = filter_input(INPUT_GET, 'aid', FILTER_SANITIZE_SPECIAL_CHARS);
 
 class Search extends Controller {
-
-	public $hello;
 	
     public function index()
     {
