@@ -16,5 +16,3 @@
     <span class="right"></span>
     </div> <!-- middle 4 -->
   </div>
-  <div id="content" class="clearfix"> <!-- Start Content -->
-

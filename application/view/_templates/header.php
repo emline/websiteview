@@ -1,37 +1,16 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title><?php if (isset($headline)) : ?><?php print $headline; ?> | Maybe Magazine<?php else : ?>Home | Maybe Magazine<?php endif; ?></title>
+  <meta charset="utf-8" />
+  <title>Looking deeper into older stories | Buried Ledes</title>
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/style.css" type="text/css" />
   <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/article.css" type="text/css" />
-  <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/login.css" type="text/css" />
-  <link rel="stylesheet" href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/files/css/jquery-ui.css" />
-  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-js.css" rel="stylesheet" type="text/css">
-  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/css/960_12_col.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript">var switchTo5x = true;</script>
-  <script type="text/javascript" src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/misc/jquery.js"></script>
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/jquery-ui.js"></script>
-  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/general.js" type="text/javascript"></script>
-  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/video.js"></script>
-  <script>
-    videojs.options.flash.swf = "<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/video-js/video-fjs.swf";
-  </script>
-	<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/publ<?php echo URL_PROTOCOL . URL_DOMAIN; ?>adxmldoc.js"></script>
-  <?php
-  if (isset($headline)) {
-
-    include("view_meta-article.php");
-  } elseif (isset($categoryd)) {
-
-    include("view_meta-article.php");
-  }
-  ?>
-  <script>
-    $(function() {
-      $("#tabs").tabs();
-    });
-  </script>
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/960gs/code/css/min/960_12_col.css" rel="stylesheet" type="text/css" />
+  <link href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/lib/jquery/jquery-1.11.3.min.js"></script>
+  <script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/livesearch.js"></script>
 </head>
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -43,71 +22,8 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
-<script>
-  $(document).ready(function() {
-    var carousel = 0;
-    $(".left").click(function() {
-      if (carousel < 1) {
-        $("#middle4b").animate({
-          "margin-left": "-1540px"
-        }, 500);
-        carousel = 5;
-      } else {
-        $("#middle4b").animate({
-          "margin-left": "+=308px"
-        }, 500);
-        carousel -= 1;
-      }
-    });
-    $(".right").click(function() {
-      if (carousel < 5) {
-        $("#middle4b").animate({
-          "margin-left": "-=308px"
-        }, 500);
-        carousel += 1;
-      } else {
-        $("#middle4b").animate({
-          "margin-left": "0px"
-        }, 500);
-        carousel = 0;
-      }
-    });
-  });
-</script>
-
-<!-- Share This Code Start -->
-<script type="text/javascript">var switchTo5x=true;</script>
-<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "585a436c-6103-4093-bf23-ef67149b6149", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
-<!-- Share This Code End -->
-
-<script>
-function showResult(str) {
-  if (str.length==0) {
-    document.getElementById("livesearch").innerHTML="";
-    document.getElementById("livesearch").style.border="0px";
-    return;
-  }
-  if (window.XMLHttpRequest) {
-    // code for IE7+, Firefox, Chrome, Opera, Safari
-    xmlhttp=new XMLHttpRequest();
-  } else {  // code for IE6, IE5
-    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xmlhttp.onreadystatechange=function() {
-    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-      document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
-      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
-    }
-  }
-  xmlhttp.open("GET","/scripts/type/livesearch?q="+str,true);
-  xmlhttp.send();
-}
-</script>
 
 <body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
-
-<script src="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/public/js/jquery-2.1.4.min.js"></script>
 
 <!-- START BODY -->
   <div id="fb-root"></div>
@@ -129,25 +45,18 @@ function showResult(str) {
       <a href="<?php URL_PROTOCOL . URL_DOMAIN ?>/"><span class="col-md6 logo">Maybe Magazine</span></a>
       <div class="col-md-6 search-bar">
         <form id="search_box" action="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/search/getkeyword/" method="get">
-          <div class="form-search">
-            <table width="300" border="0">
-              <tr>
-                <td valign="baseline">
-					<form>
-					<input id="search2" name="q" value="" class="input-text" type="text" size="30" onkeyup="showResult(this.value)">
+          <div class="grid_6">
+		  
+			<div class="grid_4 alpha">
+				<form>
+					<input id="search2" name="q" value="" class="form-control" placeholder="Search here" type="text" size="30" onkeyup="showResult(this.value)">
 					<div id="livesearch"></div>
-					</form>
-                </td>
-                <td valign="baseline">
-                  <button id="search-button" type="submit" title="Search" class="button"><span><span>Search</span></span></button>
-                  <script type="text/javascript">
-                    //<![CDATA[
-                    var searchForm = new Varien.searchForm('search_box', 'search', 'Search entire store here...');
-                    //]]>
-                  </script>
-                </td>
-              </tr>
-            </table>
+				</form>
+			</div>
+            
+			<div class="grid_2 alpha">
+				<button id="search-button" type="submit" title="Search" class="btn btn-default"><span><span>Search</span></span></button>
+			</div>
           </div>
         </form>
       </div>
@@ -165,3 +74,5 @@ function showResult(str) {
         <li class="twitter" class="col-md-1"><a href="http://twitter.com/">Twitter</a></li>
       </ul>
     </div>
+    
+    <div class="container_12">

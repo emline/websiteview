@@ -1,5 +1,3 @@
-<div class="container_12">
-
   <div class="grid_8">
 
     <div class="grid_5 alpha">
@@ -31,15 +29,15 @@
     
     <?php foreach ($secondary as $sec) {
       echo '<div class=" grid_2 alpha">
-      <img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /><br />
-      <h2 class="margin-mini-bottom">' . $sec->article_headline . '</h2>
+      <a href="/article/getarticle/' . $sec->article_url . '"><img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /></a><br />
+      <a href="/article/getarticle/' . $sec->article_url . '"><h3 class="margin-mini-bottom">' . $sec->article_headline . '</h2></a>
        </div>';
     }
     ?>
     
     <div class="clear"></div>
     
-    <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occupull requests that I approve.</p>
+    <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occur for pull requests that I approve.</p>
     
     </div> <!-- end editor picks -->
 
@@ -64,13 +62,4 @@
         </ul>
     </div>  
   </div> <!-- end grid_4 -->
-  
-
-</div> <!-- end container_12 -->
-
-
-
-
-
-
-
+ 

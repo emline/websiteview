@@ -41,20 +41,6 @@ class Model
 	
     }
 	
-	
-	public function getBible($hello)
-	{
-		$xml = simplexml_load_file("http://simoncozens.github.io/open-source-bible-data/cooked/simple-xml/kjv.xml");
-
-		// echo does the casting for you
-		//print_r($xml);
-		
-		$callback = (string)$xml->book['1']->chapter['1']->verse['1'];
-		
-		return $callback;
-	
-	}
-	
 	public function getNewest()
 	{
 	
