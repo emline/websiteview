@@ -23,7 +23,7 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
+<body id="home"> 
 
 <!-- START BODY -->
   <div id="fb-root"></div>

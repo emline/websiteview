@@ -29,7 +29,7 @@
 <script type="text/javascript">stLight.options({publisher: "585a436c-6103-4093-bf23-ef67149b6149", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 <!-- Share This Code End -->
 
-<body id="<?php if($url_controller = 'article') { print 'news'; } else { print 'home'; } ?>"> 
+<body id="home"> 
 
 <!-- START BODY -->
   <div id="fb-root"></div>
