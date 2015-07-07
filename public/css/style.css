@@ -740,19 +740,9 @@ dl dd {
 
 
 .solidblockmenu {
-/*
-    background: -webkit-linear-gradient(#111111, #333333);
- /* For Safari 5.1 to 6.0
-    background: -o-linear-gradient(#111111, #333333);
- /* For Opera 11.1 to 12.0
-    background: -moz-linear-gradient(#111111, #333333);
- /* For Firefox 3.6 to 15
-    background: linear-gradient(#111111, #333333);
- /* Standard syntax (must be last) */
 	background: #222222;
     border-bottom: 5px solid #ee5025;
     color: #fff;
-    display: inline;
     float: left;
     font-size-adjust: none;
     font-stretch: normal;
@@ -771,12 +761,11 @@ dl dd {
 }
 
 .solidblockmenu li a {
-    border-left: 1px solid #333;
     border-right: 1px solid #111;
     float: left;
     text-decoration: none;
     background-position: left center;
-    height: 30px;
+    height: 35px;
     color: #fff;
     padding-bottom: 12px;
     min-width: 75px;
@@ -915,8 +904,8 @@ a:link,a:visited,a:hover,a:active {
 #home #nav-home a,#about #nav-about a,#news #nav-news a,#features #nav-features a,#opinion #nav-opinion a,#contact #nav-contact a,.solidblockmenu li .current {
     background-color: #ee5025;
     color: #ffffff;
+	height: 35px;
     padding-bottom: 0;
-    /* background-image:url(images/up.gif); */
     background-repeat: no-repeat;
     background-position: center bottom;
 }
