@@ -19,11 +19,11 @@ class Article extends Controller {
 	
 	public function getArticle($article_id) {
 	
-		$article = $this->model->getArticle($article_id);
+		$article = $this->article->getArticle($article_id);
 		$newest = $this->model->getNewest();
 		if($article)
 		{
-			$byline = $this->model->getAuthor($article->author_id);
+			$byline = $this->article->getAuthor($article->author_id);
 		}
 		$slider = $this->model->getCarousel($article_id);
 		
