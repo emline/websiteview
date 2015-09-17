@@ -2,8 +2,6 @@
 
 class Model {
 
-	public $xml;
-
     /**
      * @param object $db A PDO database connection
      */
@@ -19,7 +17,12 @@ class Model {
 	public function getKeyword($keyword)
 	{
 
-        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND article_keywords LIKE '%{$keyword}%'";
+        $sql = "
+		SELECT * 
+		FROM article
+		WHERE article_status='2' AND category!='Archive' AND article_keywords LIKE '%{$keyword}%'
+		";
+		
         $query = $this->db->prepare($sql);
         $query->execute();
 
@@ -28,10 +31,16 @@ class Model {
 
     }
 
+	// Method to populate the "secondary" stories list on home page
 	public function getNewest()
 	{
 
-        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' ORDER BY article_id DESC LIMIT 7";
+        $sql = "
+		SELECT * FROM article 
+		WHERE article_status='2' AND category!='Archive' 
+		ORDER BY article_id DESC LIMIT 7
+		";
+		
         $query = $this->db->prepare($sql);
         $query->execute();
 
@@ -40,33 +49,51 @@ class Model {
 
 	}
 
-  public function checkStatus()
-  {
-    $sql = "SELECT * FROM article WHERE article_id='52'";
-    $query = $this->db->prepare($sql);
-    $query->execute();
+	// Unused method originally used for as backdoor to disable website. Get rid of?
+	public function checkStatus()
+	{
+		$sql = "
+		SELECT * 
+		FROM article 
+		WHERE article_id='52'
+		";
+			
+		$query = $this->db->prepare($sql);
+		$query->execute();
 
-    return $query->fetchAll();
-  }
+		return $query->fetchAll();
+	}
 
+	// This is currently the method that displays the "editor picks"
+	public function getSecondary()
+	{
 
-  public function getSecondary()
-  {
+		$sql = "
+		SELECT * 
+		FROM article 
+		WHERE article_status='2' AND category!='Archive' AND front='b' 
+		ORDER BY article_id DESC LIMIT 4
+		";
+		
+		$query = $this->db->prepare($sql);
+		$query->execute();
 
+		return $query->fetchAll();
 
-        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='b' ORDER BY article_id DESC LIMIT 4";
-        $query = $this->db->prepare($sql);
-        $query->execute();
+	}
 
-        return $query->fetchAll();
-
-
-  }
-
+	// Not sure where this is being used...
 	public function getMainImage()
 	{
 
-        $sql = "SELECT * FROM article WHERE article_status='2' AND category!='Archive' AND front='a' ORDER BY article_id DESC LIMIT 1";
+        $sql = "
+		SELECT * 
+		FROM article 
+		WHERE article_status='2' AND category!='Archive' AND front='a' 
+		ORDER BY article_id 
+		DESC LIMIT 1
+		";
+		
         $query = $this->db->prepare($sql);
         $query->execute();
 
@@ -78,9 +105,8 @@ class Model {
 	public function simpleImage($image)
 	{
 
-	$result = 'http://dev.matthewguhit.com/public/img/raw/' . $image;
-
-	return $result;
+		$result = 'http://dev.matthewguhit.com/public/img/raw/' . $image;
+		return $result;
 
 	}
 
@@ -123,7 +149,13 @@ class Model {
 
 	public function getCarousel($article_id)
 	{
-        $sql = "SELECT * FROM article WHERE front='c' AND article_status='2' AND article_id !='$article_id' ORDER BY article_id DESC LIMIT 9";
+        $sql = "
+		SELECT * 
+		FROM article 
+		WHERE front='c' AND article_status='2' AND article_id !='$article_id' 
+		ORDER BY article_id DESC LIMIT 9
+		";
+		
         $query = $this->db->prepare($sql);
         $query->execute();
 
