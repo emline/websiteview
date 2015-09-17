@@ -18,7 +18,12 @@ class ModelArticle {
 	
     public function getArticle($article_id)
     {
-        $sql = "SELECT article_headline, article_deck, author_id, article_outlet, article_pdate, category, article_image, article_body FROM article WHERE article_status='2' AND article_url = :article_id";
+        $sql = "
+		SELECT a.article_headline, a.article_deck, a.author_id, a.article_outlet, a.article_pdate, a.category, a.article_image, c.article_body 
+		FROM article AS a 
+		JOIN articlecontent AS c ON c.article_id = a.article_id
+		WHERE article_status='2' AND article_url = :article_id";
+		
         $query = $this->db->prepare($sql);
         $parameters = array(':article_id' => $article_id);
 
@@ -30,7 +35,11 @@ class ModelArticle {
 		
     public function getAuthor($author_id)
     {
-        $sql = "SELECT author_name, author_mug, author_bio FROM author WHERE author_id = :author_id";
+        $sql = "
+		SELECT a.author_name, a.author_mug, a.author_bio 
+		FROM author AS a 
+		WHERE a.author_id = :author_id";
+		
         $query = $this->db->prepare($sql);
         $parameters = array(':author_id' => $author_id);
 
