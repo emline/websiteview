@@ -44,6 +44,15 @@
       <p><?php echo $byline->author_bio; ?></p>
       </div>
     </div>
+    
+    <h2>Comments</h2>
+    
+    <form action="">
+      <input type="text" name="comment" style="width: 100%; height: 75px;"><br />
+      <input type="submit" value="Add Comment">
+    
+    </form>
+ 
     <?php /*
     <div class="related-stories">
       <h3 class="related-stories-header">More Articles You May Like</h3>
