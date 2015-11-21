@@ -47,9 +47,9 @@
     
     <h2>Comments</h2>
     
-    <form action="">
-      <input type="text" name="comment" style="width: 100%; height: 75px;"><br />
-      <input type="submit" value="Add Comment">
+    <form action="<?php echo URL; ?>comments/addcomment" method="POST">
+      <input type="text" name="comments_body" value="" style="width: 100%; height: 75px;" required /><br />
+      <input type="submit" name="submit_add_comment" value="Add Comment">
     
     </form>
  

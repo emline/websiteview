@@ -109,7 +109,7 @@ class Model {
 		return $result;
 
 	}
-
+ 
 	public function imagecache($nala, $width, $height)
 	{
 
@@ -165,10 +165,39 @@ class Model {
 
 
 
+public function getComments()
+{
+		$sql = "SELECT * FROM comments";
+		$query = $this->db->prepare($sql);
+		$query->execute();
+		return $query->fetchAll();
+}
 
+public function getAmountOfComments()
+{
+		$sql = "SELECT COUNT(comments_id) AS amount_of_comments FROM comments";
+		$query = $this->db->prepare($sql);
+		$query->execute();
+		return $query->fetch()->amount_of_comments;
+}
 
+public function getAllComments()
+{
+		$sql = "SELECT *";
+		$query = $this->db->prepare($sql);
+		$query->execute();
+		
+		return $query->fetchAll();
+}
 
+public function addComment($comments_body)
+{
+		$sql = "INSERT INTO comments (comments_body) VALUES (:comments_body)";
+		$query = $this->db->prepare($sql);
+		$parameters = array(':comments_body' => $comments_body);
 
+		$query->execute($parameters);
+}
 
 
 	/*
