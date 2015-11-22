@@ -183,7 +183,7 @@ public function getAmountOfComments()
 
 public function getAllComments()
 {
-		$sql = "SELECT *";
+		$sql = "SELECT * from comments";
 		$query = $this->db->prepare($sql);
 		$query->execute();
 		
