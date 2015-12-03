@@ -14,6 +14,24 @@ class Model {
         }
     }
 
+	
+    public function getCommentsPage($article_id)
+    {
+        $sql = "
+		SELECT *
+		FROM comments
+		WHERE article_id = :article_id";
+		
+        $query = $this->db->prepare($sql);
+        $parameters = array(':article_id' => $article_id);
+
+        $query->execute($parameters);
+		
+		return $query->fetch();
+
+    }
+		
+
 	public function getKeyword($keyword)
 	{
 

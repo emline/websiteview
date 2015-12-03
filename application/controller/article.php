@@ -21,6 +21,8 @@ class Article extends Controller {
 	
 		$article = $this->article->getArticle($article_id);
 		$newest = $this->model->getNewest();
+		$comment = $this->model->getCommentsPage($article_id);
+		
 		if($article)
 		{
 			$byline = $this->article->getAuthor($article->author_id);
