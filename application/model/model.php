@@ -208,11 +208,11 @@ public function getAllComments()
 		return $query->fetchAll();
 }
 
-public function addComment($comments_body)
+public function addComment($comments_body, $article_id)
 {
-		$sql = "INSERT INTO comments (comments_body) VALUES (:comments_body)";
+		$sql = "INSERT INTO comments (comments_body,article_id) VALUES (:comments_body, :article_id)";
 		$query = $this->db->prepare($sql);
-		$parameters = array(':comments_body' => $comments_body);
+		$parameters = array(':comments_body' => $comments_body, ':article_id' => $article_id);
 
 		$query->execute($parameters);
 }

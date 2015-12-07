@@ -40,7 +40,7 @@ class Comments extends Controller
         // if we have POST data to create a new song entry
         if (isset($_POST["submit_add_comment"])) {
             // do addSong() in model/model.php
-            $this->model->addComment($_POST["comments_body"]);
+            $this->model->addComment($_POST["comments_body"], $_POST["article_id"]);
         }
 
         // where to go after song has been added

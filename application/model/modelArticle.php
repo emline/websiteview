@@ -19,7 +19,7 @@ class ModelArticle {
     public function getArticle($article_id)
     {
         $sql = "
-		SELECT a.article_headline, a.article_deck, a.author_id, a.article_outlet, a.article_pdate, a.category, a.article_image, c.article_body 
+		SELECT a.article_id, a.article_url, a.article_headline, a.article_deck, a.author_id, a.article_outlet, a.article_pdate, a.category, a.article_image, c.article_body 
 		FROM article AS a 
 		JOIN articlecontent AS c ON c.article_id = a.article_id
 		WHERE article_status='2' AND article_url = :article_id";
