@@ -47,13 +47,18 @@
     
     <h2>Comments</h2>
     
-    <?php echo $comment->comments_body; ?>
+    <?php if(isset($comment->comments_body)){
+    	        echo $comment->comments_body;
+    	       } 
+    	       else{
+    	        echo "No comments yet.";
+    	       } 
+    ?>
     <br />
-    <br /><?php echo $article->article_id; ?>
-    
+    <br />
     <form action="<?php echo URL; ?>comments/addcomment" method="POST">
       <input type="text" name="comments_body" value="" style="width: 100%; height: 75px;" required /><br />
-      <input type="text" name="article_id" value="<?php echo $article->article_url; ?>" /><br />
+      <input style="display: none;" type="text" name="article_id" value="<?php echo $article->article_url; ?>" /><br />
       <input type="submit" name="submit_add_comment" value="Add Comment">
     
     </form>
