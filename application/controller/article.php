@@ -3,8 +3,6 @@
 //$articleID = filter_input(INPUT_GET, 'aid', FILTER_SANITIZE_SPECIAL_CHARS);
 
 class Article extends Controller {
-
-	public $hello;
 	
     public function index()
     {
@@ -20,14 +18,11 @@ class Article extends Controller {
 	public function getArticle($article_id) {
 	
 		$article = $this->article->getArticle($article_id);
+        $byline = $this->article->getAuthor($article->author_id);
+    	$comment = $this->model->getCommentsPage($article_id);        
 		$newest = $this->model->getNewest();
-		$comment = $this->model->getCommentsPage($article_id);
-		
-		if($article)
-		{
-			$byline = $this->article->getAuthor($article->author_id);
-		}
-		$slider = $this->model->getCarousel($article_id);
+    	$slider = $this->model->getCarousel($article_id);        
+		$user = $this->model->getUserName(1); //this is supposed to be me until I get authentication to work?
 		
 		if($article)
 		{
