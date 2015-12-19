@@ -17,8 +17,7 @@ class Comments extends Controller
      */
     public function index()
     {
-        
-        $comments = $this->model->getAllComments();
+
         $amount_of_comments = $this->model->getAmountOfComments();
 
        // load views. within the views we can echo out $songs and $amount_of_songs easily
