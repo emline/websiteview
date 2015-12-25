@@ -77,7 +77,7 @@
     <div id="container" >
       <ul class="solidblockmenu">
         <li id="nav-home" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>">Home</a></li>
-        <li id="nav-about" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/page/1">About</a></li>
+        <li id="nav-about" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/page/getpage/about">About</a></li>
         <li id="nav-news" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/news">News</a></li>
         <li id="nav-features" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/features">Features</a></li>
         <li id="nav-opinion" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/opinion">Opinion</a></li>
