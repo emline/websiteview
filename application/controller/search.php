@@ -21,7 +21,8 @@ class Search extends Controller {
         $keyword = filter_input(INPUT_GET,'q');
 
         // Object to be used in view.
-        $newest = $this->model->getKeyword($keyword);
+		$newest = $this->model->getNewest();
+        $keyword = $this->model->getKeyword($keyword);
 
   			// php-pagination library include
         require APP . 'libs/php-pagination/Pagination.class.php';
