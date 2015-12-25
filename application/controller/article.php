@@ -21,8 +21,7 @@ class Article extends Controller {
         $byline = $this->article->getAuthor($article->author_id);
     	$comment = $this->model->getCommentsPage($article_id);        
 		$newest = $this->model->getNewest();
-    	$slider = $this->model->getCarousel($article_id);        
-		$user = $this->model->getUserName(1); //this is supposed to be me until I get authentication to work?
+    	$slider = $this->model->getCarousel($article_id);
 		
 		if($article)
 		{
