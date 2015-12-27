@@ -1,6 +1,6 @@
 <?php
 
-class Categories extends Controller {
+class Category extends Controller {
 
     public function index()
     {
@@ -10,16 +10,15 @@ class Categories extends Controller {
         require APP . 'view/_templates/footer.php';
     }
 
-	 public function getCategory()
+	 public function getCategory($param)
 	 {
-
-        //$keyword = filter_input(INPUT_GET,'q');
-        //$newest = $this->model->getKeyword($keyword);
+	 	
+		$newest = $this->model->getNewest();
 
         require APP . 'view/_templates/header.php';
         //require APP . 'view/_templates/carousel.php';
-        require APP . 'view/categories/index.php';
-        require APP . 'view/_templates/region1.php';
+        require APP . 'view/categories/' . $param . '.php';
+        require APP . 'view/_templates/region2.php';
         require APP . 'view/_templates/footer.php';
 
 	 }
