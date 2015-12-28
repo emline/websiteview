@@ -37,7 +37,8 @@
 
     <div class="clear"></div>
 
-    <p>This is a test. I am now pushing all staging changes to FTPloy and all master changes with Deploy HQ, which currently allows up to 10 deployments per day. The latter will only occur for pull requests that I approve.</p>
+	<h2>About Maybe Magazine</h2>
+    <p>Maybe Magazine is an independent website about anything and everything. I originally started it to focus on comic books. But since I don't really read too many, I've decided to make it my personal platform for my writing.</p>
 
     </div> <!-- end editor picks -->
 
