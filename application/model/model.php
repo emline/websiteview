@@ -66,6 +66,24 @@ class Model {
 		return $query->fetchAll();
 
 	}
+	
+	public function getCategory($param)
+	{
+
+        $sql = "
+		SELECT *
+		FROM article
+		WHERE category = :param AND article_status = '2'
+		";
+		
+        $query = $this->db->prepare($sql);
+        $parameters = array(':param' => $param);
+
+        $query->execute($parameters);
+		
+		return $query->fetch();
+
+	}
 
 	// Unused method originally used for as backdoor to disable website. Get rid of?
 	public function checkStatus()

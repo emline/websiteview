@@ -13,6 +13,7 @@ class Category extends Controller {
 	 public function getCategory($param)
 	 {
 	 	
+		$category = $this->model->getCategory($param);
 		$newest = $this->model->getNewest();
 
         require APP . 'view/_templates/header.php';
