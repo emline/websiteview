@@ -14,6 +14,7 @@ class Category extends Controller {
 	 {
 	 	
 		$category = $this->model->getCategory($param);
+		$categoryArray = (array) $category;
 		$newest = $this->model->getNewest();
 
         require APP . 'view/_templates/header.php';

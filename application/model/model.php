@@ -81,7 +81,7 @@ class Model {
 
         $query->execute($parameters);
 		
-		return $query->fetch();
+		return $query->fetchAll();
 
 	}
 
