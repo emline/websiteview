@@ -4,8 +4,8 @@
 
       <?php foreach ($toppicks as $toppick)
       {
-        echo ' <a href="' . URL_PROTOCOL . URL_DOMAIN . '/article/getarticle/' . $toppick->article_url . '"><img src="' . $this->model->imagecache($toppick->article_image, 380, 300) . '" /></a>';
-         echo '<h1><a href="' . URL_PROTOCOL . URL_DOMAIN . '/article/getarticle/' . $toppick->article_url . '">' . $toppick->article_alt_headline . '</a></h1>';
+        echo ' <a href="' . URL_PROTOCOL . URL_DOMAIN . '/p/article/' . $toppick->article_url . '"><img src="' . $this->model->imagecache($toppick->article_image, 380, 300) . '" /></a>';
+         echo '<h1><a href="' . URL_PROTOCOL . URL_DOMAIN . '/p/article/' . $toppick->article_url . '">' . $toppick->article_alt_headline . '</a></h1>';
          echo '<p>' . $toppick->article_summary . '</p>';
       }
        ?>
@@ -15,7 +15,7 @@
     <div class="grid_3 omega">
       <?php foreach($newest as $new)
        {
-         echo '<p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p>';
+         echo '<p><a href="/p/article/' . $new->article_url .'">' . $new->article_headline . '</a></p>';
         echo "
         ";
       }
@@ -29,8 +29,8 @@
 
     <?php foreach ($secondary as $sec) {
       echo '<div class=" grid_2 alpha">
-      <a href="/article/getarticle/' . $sec->article_url . '"><img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /></a><br />
-      <a href="/article/getarticle/' . $sec->article_url . '"><h4 class="margin-mini-bottom">' . $sec->article_headline . '</h2></a>
+      <a href="/p/article/' . $sec->article_url . '"><img src="' . $this->model->imagecache($sec->article_image,140, 140) . '" /></a><br />
+      <a href="/p/article/' . $sec->article_url . '"><h4 class="margin-mini-bottom">' . $sec->article_headline . '</h2></a>
        </div>';
     }
     ?>
@@ -55,7 +55,7 @@
         </h3>
         <ul>
       <?php foreach ($newest as $new) {
-          echo '<li><p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p></li>';
+          echo '<li><p><a href="/p/article/' . $new->article_url .'">' . $new->article_headline . '</a></p></li>';
           echo "
           ";
           }
