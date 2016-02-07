@@ -77,11 +77,11 @@
     <div id="container" >
       <ul class="solidblockmenu">
         <li id="nav-home" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN . "/"; ?>">Home</a></li>
-        <li id="nav-about" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/page/getpage/about">About</a></li>
-        <li id="nav-news" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/getcategory/news">News</a></li>
-        <li id="nav-features" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/getcategory/features">Features</a></li>
-        <li id="nav-opinion" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/category/getcategory/opinion">Opinion</a></li>
-        <li id="nav-contact" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/page/getpage/contact">Contact</a></li>
+        <li id="nav-about" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/p/page/about">About</a></li>
+        <li id="nav-news" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/p/category/news">News</a></li>
+        <li id="nav-features" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/p/category/features">Features</a></li>
+        <li id="nav-opinion" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/p/category/opinion">Opinion</a></li>
+        <li id="nav-contact" class="col-md-1"><a href="<?php echo URL_PROTOCOL . URL_DOMAIN; ?>/p/page/contact">Contact</a></li>
         <li class="email" class="col-md-1"><a href="http://gmail.com/">E-mail</a></li>
         <li class="facebook" class="col-md-1"><a href="http://facebook.com/">Facebook</a></li>
         <li class="twitter" class="col-md-1"><a href="http://twitter.com/">Twitter</a></li>
