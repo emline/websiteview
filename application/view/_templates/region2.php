@@ -9,7 +9,7 @@
     </h3>
     <ul>
     <?php foreach ($newest as $new) {
-    echo '<li><p><a href="/article/getarticle/' . $new->article_url .'">' . $new->article_headline . '</a></p></li>';
+    echo '<li><p><a href="/p/article/' . $new->article_url .'">' . $new->article_headline . '</a></p></li>';
     echo "
     ";
     }
